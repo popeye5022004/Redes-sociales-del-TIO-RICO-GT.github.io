@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modo Menú</title>
+</head>
+<body>
+    <!-- Pantalla de Inicio -->
+    <div id="login-screen" class="screen active">
+        <div class="login-container">
+            <h1>Bienvenido</h1>
+            <p>Inicia sesión para continuar</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Menú de Aplicaciones -->
+    <div id="menu-screen" class="screen">
+        <div class="menu">
+            <div class="app" id="whatsapp" data-url="https://chat.whatsapp.com/HMGPVCEgqGi5jVQTNdhR0R">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+                <p>WhatsApp</p>
+            </div>
+            <div class="app" id="facebook" data-url="https://www.facebook.com/Pope.2005">
+                <img src="facebook-icon.png" alt="Facebook">
+                <p>Facebook</p>
+            </div>
+            <div class="app" id="tiktok" data-url="https://www.tiktok.com/@tio_jhon1?_t=8oYRLVaCiVK&_r=1">
+                <img src="tiktok-icon.png" alt="TikTok">
+                <p>TikTok</p>
+            </div>
+        </div>
+        <button id="logout-button">Cerrar sesión</button>
+        <div class="app-display" id="app-display">
+            <p>Selecciona una aplicación</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
